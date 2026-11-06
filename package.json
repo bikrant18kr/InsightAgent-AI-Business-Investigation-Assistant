@@ -1,0 +1,36 @@
+{
+  "name": "insightagent-ai-business-investigation-assistant",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "InsightAgent - AI Business Investigation Assistant with Controlled SQL Analytics and Policy Context",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "dev": "node server/index.js",
+    "build": "npm run build --prefix client",
+    "test": "node --test --test-force-exit tests/analytics.test.js tests/investigationEngine.test.js tests/apiIntegration.test.js"
+  },
+  "keywords": [
+    "business-intelligence",
+    "openai",
+    "analytics",
+    "rag",
+    "function-calling",
+    "sql",
+    "investigation"
+  ],
+  "author": "bikrant18kr",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.86.1",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "pg-mem": "^3.0.4"
+  }
+}
